@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cumSplash.png">
+    <!-- Made using Maru Aseprite JSON to XML converter -->
+    <SubTexture name="00000" x="0" y="0" width="220" height="196" />
+    <SubTexture name="00001" x="220" y="0" width="220" height="196" />
+    <SubTexture name="00002" x="440" y="0" width="220" height="196" />
+    <SubTexture name="00003" x="0" y="196" width="220" height="196" />
+    <SubTexture name="00004" x="0" y="196" width="220" height="196" />
+    <SubTexture name="00005" x="220" y="196" width="220" height="196" />
+    <SubTexture name="00006" x="220" y="196" width="220" height="196" />
+    <SubTexture name="00007" x="440" y="196" width="220" height="196" />
+</TextureAtlas>
