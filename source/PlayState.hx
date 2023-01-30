@@ -3,6 +3,7 @@ package;
 import AndrewState;
 import AwkayState;
 import FunnyState;
+import GurkState;
 import MonkaState;
 import RailState;
 import SkryState;
@@ -105,6 +106,11 @@ class PlayState extends FlxState
 		if (FlxG.keys.justPressed.GRAVEACCENT)
 		{
 			FlxG.switchState(new RailState());
+		}
+
+		if (FlxG.keys.justPressed.G)
+		{
+			FlxG.switchState(new GurkState());
 		}
 	}
 }
