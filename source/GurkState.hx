@@ -11,6 +11,7 @@ class GurkState extends FlxState
 {
 	public var gurk:FlxSprite;
 	public var counter:FlxText;
+	public var gurkCount = 0;
 
 	override public function create():Void
 	{
@@ -20,6 +21,11 @@ class GurkState extends FlxState
 		gurk.screenCenter();
 		gurk.alpha = 0;
 		add(gurk);
+
+		counter = new FlxText(0, 50, 0, "Gurks: " + gurkCount, 25);
+		counter.color = 0xFFFF0000;
+		counter.screenCenter(X);
+		add(counter);
 	}
 
 	override public function update(elapsed:Float):Void
@@ -36,6 +42,7 @@ class GurkState extends FlxState
 			// com
 			FlxG.sound.play(AssetPaths.vine__ogg);
 			gurk.alpha = 1;
+			gurkCount = gurkCount + 1;
 			FlxTween.tween(gurk, {alpha: 0}, 0.5);
 		}
 	}
