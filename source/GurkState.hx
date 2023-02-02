@@ -12,6 +12,8 @@ class GurkState extends FlxState
 	public var gurk:FlxSprite;
 	public var counter:FlxText;
 	public var gurkCount:Int = 0;
+	public var gurkCount2:Int = 0;
+	public var gurkCount3:Int = 0;
 	public  var numOne:FlxSprite;
 	public var numTwo:FlxSprite;
 	public  var numThree:FlxSprite;
@@ -65,10 +67,21 @@ class GurkState extends FlxState
 			FlxG.sound.play(AssetPaths.vine__ogg);
 			gurk.alpha = 1;
 			gurkCount = gurkCount + 1;
-			counter = new FlxText(0, 50, 0, "Gurks: " + gurkCount, 25);
 			FlxTween.tween(gurk, {alpha: 0}, 0.5);
 
 			numOne.loadGraphic('assets/images/1.png');
+		}
+		
+		if gurkCount == 10
+		{
+			gurkCount = 0;
+			gurkCount2 = gurkCount2 + 1;
+		}
+		
+		if gurkCount2 == 10
+		{
+			gurkCount2 = 0;
+			gurkCount3 = gurkCount3 + 1;
 		}
 	}
 }
