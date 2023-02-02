@@ -23,7 +23,7 @@ class GurkState extends FlxState
 		super.create();
 		
 		nums = {a: assets/images/0.png, b: assets/images/1.png, c: assets/images/2.png, d: assets/images/3.png, e: assets/images/4.png, f: assets/images/6.png, g: assets/images/6.png, h: assets/images/7.png, i: assets/images/8.png, j: assets/images/9.png};
-		public var pngThing = '.png';
+		public var pngThing = ".png";
 
 		gurk = new FlxSprite().loadGraphic('assets/images/gurk.png');
 		gurk.screenCenter();
