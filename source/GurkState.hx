@@ -14,16 +14,17 @@ class GurkState extends FlxState
 	public var gurkCount:Int = 0;
 	public var gurkCount2:Int = 0;
 	public var gurkCount3:Int = 0;
-	public  var numOne:FlxSprite;
+	public var numOne:FlxSprite;
 	public var numTwo:FlxSprite;
-	public  var numThree:FlxSprite;
+	public var numThree:FlxSprite;
+	public var num:Array<String> =  [ "assets/images/0.png", "assets/images/1.png", "assets/images/2.png", "assets/images/3.png", "assets/images/4.png", "assets/images/6.png", "assets/images/6.png", "assets/images/7.png", "assets/images/8.png", "assets/images/9.png"];
 	
 	override public function create():Void
 	{
 		super.create();
 		
-		nums = {a: assets/images/0.png, b: assets/images/1.png, c: assets/images/2.png, d: assets/images/3.png, e: assets/images/4.png, f: assets/images/6.png, g: assets/images/6.png, h: assets/images/7.png, i: assets/images/8.png, j: assets/images/9.png};
-		public var pngThing = ".png";
+		//num = {a: "assets/images/0.png", b: "assets/images/1.png", c: "assets/images/2.png", d: "assets/images/3.png", e: "assets/images/4.png", f: "assets/images/6.png", g: "assets/images/6.png", h: "assets/images/7.png", i: "assets/images/8.png", j: "assets/images/9.png"};
+		//var pngThing = ".png";
 
 		gurk = new FlxSprite().loadGraphic('assets/images/gurk.png');
 		gurk.screenCenter();
@@ -72,17 +73,16 @@ class GurkState extends FlxState
 
 			numOne.loadGraphic('assets/images/1.png');
 		}
-		
-		if gurkCount == 10
+	/*	if (gurkCount2 == 10)
 		{
 			gurkCount = 0;
 			gurkCount2 = gurkCount2 + 1;
 		}
 		
-		if gurkCount2 == 10
+		if (gurkCount2 == 10)
 		{
 			gurkCount2 = 0;
 			gurkCount3 = gurkCount3 + 1;
-		}
+		}*/
 	}
 }
