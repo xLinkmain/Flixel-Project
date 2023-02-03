@@ -18,13 +18,13 @@ import haxe.Timer;
 
 class FunnyState extends FlxState
 {
-	var box:FlxSprite;
-	var skry:FlxSprite;
-	var boy:FlxSprite;
-	var splash:FlxSprite;
-	var hitTimer:FlxTimer;
-	var hear:FlxSprite;
-	var frames:FlxAtlasFrames;
+	public var box:FlxSprite;
+	public var skry:FlxSprite;
+	public var boy:FlxSprite;
+	public var splash:FlxSprite;
+	public var hitTimer:FlxTimer;
+	public var hear:FlxSprite;
+	public var frames:FlxAtlasFrames;
 
 	override public function create()
 	{
@@ -66,13 +66,6 @@ class FunnyState extends FlxState
 		hear.animation.addByPrefix('good', 'so good i chuckled!', 24, false);
 
 		add(hear);
-
-		// FlxTween.tween(boy, {skry.x, skry.y}, 1, {type: flxTweenType.PINGPONG});
-
-		/*	FlxTween.tween(boy, {
-			x: skry.x,
-			y: skry.y
-		}, 1, {type: FlxTweenType.PINGPONG});*/
 
 		FlxTween.tween(boy, {
 			x: skry.x,
