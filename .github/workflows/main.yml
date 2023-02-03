@@ -24,6 +24,7 @@ jobs:
           haxelib install lime --quiet
           haxelib install openfl --quiet
           haxelib install flixel --quiet
+          haxelib install hxcpp --quiet
         shell: cmd
 
       - name: Compile
