@@ -1,3 +1,6 @@
+# Nabbed the caching from Codename Engine's workflow.
+# The Windows version can be found here: https://github.com/YoshiCrafter29/CodenameEngine/blob/main/.github/workflows/windows.yml
+
 name: CI
 
 on:
